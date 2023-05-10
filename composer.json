@@ -1,5 +1,5 @@
 {
-    "name": "renoki-co/octane-exporter",
+    "name": "grassias/octane-exporter",
     "description": "Export Laravel Octane metrics using this Prometheus exporter.",
     "keywords": [
         "laravel",
@@ -20,9 +20,9 @@
         }
     ],
     "require": {
-        "laravel/framework": "^8.81|^9.7.0",
+        "laravel/framework": "^8.81|^9.7.0|^10.0",
         "laravel/octane": "^1.2.5",
-        "renoki-co/laravel-exporter-contracts": "^1.4|^2.1.1"
+        "grassias/laravel-exporter-contracts": "dev-master"
     },
     "autoload": {
         "psr-4": {
@@ -47,6 +47,12 @@
         "sort-packages": true
     },
     "minimum-stability": "dev",
+    "repositories": [
+        {
+            "url": "https://github.com/grassias/laravel-exporter-contracts.git",
+            "type": "vcs"
+        }
+    ],
     "extra": {
         "laravel": {
             "providers": [
